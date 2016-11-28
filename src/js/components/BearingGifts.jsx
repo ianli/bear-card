@@ -2,6 +2,7 @@ import React from 'react';
 
 import LeftArm from './LeftArm';
 import LeftLeg from './LeftLeg';
+import RightArm from './RightArm';
 import RightLeg from './RightLeg';
 import Torso from './Torso';
 import California from './California';
@@ -49,6 +50,10 @@ class BearingGifts extends React.Component {
 
         <LeftArm
             color="#E91E63"
+            pattern="image-snowflakes" />
+
+        <RightArm
+            color="#FF5722"
             pattern="image-snowflakes" />
       </svg>
     );
