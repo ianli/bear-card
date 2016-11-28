@@ -1,11 +1,12 @@
 import React from 'react';
 
+import California from './California';
+import Head from './Head';
 import LeftArm from './LeftArm';
 import LeftLeg from './LeftLeg';
 import RightArm from './RightArm';
 import RightLeg from './RightLeg';
 import Torso from './Torso';
-import California from './California';
 
 class BearingGifts extends React.Component {
   constructor() {
@@ -54,6 +55,10 @@ class BearingGifts extends React.Component {
 
         <RightArm
             color="#FF5722"
+            pattern="image-snowflakes" />
+
+        <Head
+            color="#2196F3"
             pattern="image-snowflakes" />
       </svg>
     );
