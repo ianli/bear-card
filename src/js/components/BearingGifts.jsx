@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Torso from './Torso';
+
 class BearingGifts extends React.Component {
   constructor() {
     super();
@@ -28,9 +30,14 @@ class BearingGifts extends React.Component {
         <LeftLeg
             color="#4CAF50"
             pattern="image-trees" />
+
         <RightLeg
             color="#AB47BC"
             pattern="image-snowflakes" />
+
+        <Torso
+            color="#64B5F6"
+            pattern="image-trees" />
       </svg>
     );
   }
