@@ -3,6 +3,7 @@ import React from 'react';
 import LeftLeg from './LeftLeg';
 import RightLeg from './RightLeg';
 import Torso from './Torso';
+import California from './California';
 
 class BearingGifts extends React.Component {
   constructor() {
@@ -40,6 +41,10 @@ class BearingGifts extends React.Component {
         <Torso
             color="#64B5F6"
             pattern="image-trees" />
+
+        <California
+            color="#FFC107"
+            pattern="image-snowflakes" />
       </svg>
     );
   }
