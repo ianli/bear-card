@@ -3,3 +3,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 
 # Build settings
 markdown: kramdown
+exclude: [
+  'gulp',
+  'node_modules',
+  'src',
+  'Gulpfile.js',
+  'package.json'
+]
