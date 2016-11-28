@@ -1,2 +1,6 @@
 _site
 .sass-cache
+
+# NPM
+node_modules
+build
