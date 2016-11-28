@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import BearingGifts from './BearingGifts';
+import BearingGifts from './components/BearingGifts';
 
 ReactDOM.render(
   <BearingGifts />,
