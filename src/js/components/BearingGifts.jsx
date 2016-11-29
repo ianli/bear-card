@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Background from './Background';
 import California from './California';
 import Head from './Head';
 import LeftArm from './LeftArm';
@@ -51,15 +52,9 @@ class BearingGifts extends React.Component {
           </pattern>
         </defs>
 
-        <rect
-            fill="#4db6ac"
-            width="960"
-            height="1280"/>
-
-        <rect
-            fill="url(#image-snow)"
-            width="960"
-            height="1280"/>
+        <Background
+            color="#4db6ac"
+            pattern="image-snow" />
 
         <LeftLeg
             color="#4CAF50"
