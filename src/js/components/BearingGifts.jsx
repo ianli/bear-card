@@ -9,12 +9,45 @@ import RightArm from './RightArm';
 import RightLeg from './RightLeg';
 import Torso from './Torso';
 
+const PATTERNS = [
+  'image-snowflakes',
+  'image-trees',
+  'image-reindeer',
+  'image-hearts',
+  'image-stars',
+  'image-menorahs',
+  'image-dreidels'
+];
+
+const COLORS = [
+  "#4CAF50",
+  "#AB47BC",
+  "#64B5F6",
+  "#FFC107",
+  "#E91E63",
+  "#FF5722",
+  "#2196F3",
+  '#4db6ac'
+];
+
 class BearingGifts extends React.Component {
   constructor() {
     super();
   }
 
   render() {
+    let patterns = [].concat(PATTERNS);
+    for (let i = 0, n = patterns.length; i < n; i++) {
+      let index = Math.floor(Math.random() * (patterns.length - i));
+      patterns.push(patterns.splice(index, 1));
+    }
+
+    let colors = [].concat(COLORS);
+    for (let i = 0, n = colors.length; i < n; i++) {
+      let index = Math.floor(Math.random() * (colors.length - i));
+      colors.push(colors.splice(index, 1));
+    }
+
     return (
       <svg version="1.1"
             x="0px"
@@ -53,36 +86,36 @@ class BearingGifts extends React.Component {
         </defs>
 
         <Background
-            color="#4db6ac"
+            color={colors[7]}
             pattern="image-snow" />
 
         <LeftLeg
-            color="#4CAF50"
-            pattern="image-trees" />
+            color={colors[0]}
+            pattern={patterns[0]} />
 
         <RightLeg
-            color="#AB47BC"
-            pattern="image-menorahs" />
+            color={colors[1]}
+            pattern={patterns[1]} />
 
         <Torso
-            color="#64B5F6"
-            pattern="image-reindeer" />
+            color={colors[2]}
+            pattern={patterns[2]} />
 
         <California
-            color="#FFC107"
-            pattern="image-stars" />
+            color={colors[3]}
+            pattern={patterns[3]} />
 
         <LeftArm
-            color="#E91E63"
-            pattern="image-hearts" />
+            color={colors[4]}
+            pattern={patterns[4]} />
 
         <RightArm
-            color="#FF5722"
-            pattern="image-dreidels" />
+            color={colors[5]}
+            pattern={patterns[5]} />
 
         <Head
-            color="#2196F3"
-            pattern="image-snowflakes" />
+            color={colors[6]}
+            pattern={patterns[6]} />
       </svg>
     );
   }
