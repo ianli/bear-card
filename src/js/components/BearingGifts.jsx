@@ -31,7 +31,35 @@ class BearingGifts extends React.Component {
           <pattern id="image-trees" x="0" y="0" patternUnits="userSpaceOnUse" width="65" height="68">
             <image x="0" y="0" width="65" height="68" xlinkHref="images/patterns/trees.png"></image>
           </pattern>
+          <pattern id="image-reindeer" x="0" y="0" patternUnits="userSpaceOnUse" width="320" height="270">
+            <image x="0" y="0" width="320" height="270" xlinkHref="images/patterns/reindeer.png"></image>
+          </pattern>
+          <pattern id="image-hearts" x="0" y="0" patternUnits="userSpaceOnUse" width="121" height="68">
+            <image x="0" y="0" width="121" height="68" xlinkHref="images/patterns/hearts.png"></image>
+          </pattern>
+          <pattern id="image-stars" x="0" y="0" patternUnits="userSpaceOnUse" width="140" height="142">
+            <image x="0" y="0" width="140" height="142" xlinkHref="images/patterns/stars.png"></image>
+          </pattern>
+          <pattern id="image-menorahs" x="0" y="0" patternUnits="userSpaceOnUse" width="110" height="110">
+            <image x="0" y="0" width="110" height="110" xlinkHref="images/patterns/menorahs.png"></image>
+          </pattern>
+          <pattern id="image-dreidels" x="0" y="0" patternUnits="userSpaceOnUse" width="75" height="75">
+            <image x="0" y="0" width="75" height="75" xlinkHref="images/patterns/dreidels.png"></image>
+          </pattern>
+          <pattern id="image-snow" x="0" y="0" patternUnits="userSpaceOnUse" width="224" height="172">
+            <image x="0" y="0" width="224" height="172" xlinkHref="images/patterns/snow.png"></image>
+          </pattern>
         </defs>
+
+        <rect
+            fill="#4db6ac"
+            width="960"
+            height="1280"/>
+
+        <rect
+            fill="url(#image-snow)"
+            width="960"
+            height="1280"/>
 
         <LeftLeg
             color="#4CAF50"
@@ -39,23 +67,23 @@ class BearingGifts extends React.Component {
 
         <RightLeg
             color="#AB47BC"
-            pattern="image-snowflakes" />
+            pattern="image-menorahs" />
 
         <Torso
             color="#64B5F6"
-            pattern="image-trees" />
+            pattern="image-reindeer" />
 
         <California
             color="#FFC107"
-            pattern="image-snowflakes" />
+            pattern="image-stars" />
 
         <LeftArm
             color="#E91E63"
-            pattern="image-snowflakes" />
+            pattern="image-hearts" />
 
         <RightArm
             color="#FF5722"
-            pattern="image-snowflakes" />
+            pattern="image-dreidels" />
 
         <Head
             color="#2196F3"
