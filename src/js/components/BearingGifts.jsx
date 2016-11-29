@@ -27,28 +27,28 @@ class BearingGifts extends React.Component {
             }}>
         <defs>
           <pattern id="image-snowflakes" x="0" y="0" patternUnits="userSpaceOnUse" width="65" height="65">
-            <image x="0" y="0" width="65" height="65" xlinkHref="images/patterns/snowflakes.png"></image>
+            <image x="0" y="0" width="65" height="65" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/snowflakes.png"></image>
           </pattern>
           <pattern id="image-trees" x="0" y="0" patternUnits="userSpaceOnUse" width="65" height="68">
-            <image x="0" y="0" width="65" height="68" xlinkHref="images/patterns/trees.png"></image>
+            <image x="0" y="0" width="65" height="68" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/trees.png"></image>
           </pattern>
           <pattern id="image-reindeer" x="0" y="0" patternUnits="userSpaceOnUse" width="320" height="270">
-            <image x="0" y="0" width="320" height="270" xlinkHref="images/patterns/reindeer.png"></image>
+            <image x="0" y="0" width="320" height="270" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/reindeer.png"></image>
           </pattern>
           <pattern id="image-hearts" x="0" y="0" patternUnits="userSpaceOnUse" width="121" height="68">
-            <image x="0" y="0" width="121" height="68" xlinkHref="images/patterns/hearts.png"></image>
+            <image x="0" y="0" width="121" height="68" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/hearts.png"></image>
           </pattern>
           <pattern id="image-stars" x="0" y="0" patternUnits="userSpaceOnUse" width="140" height="142">
-            <image x="0" y="0" width="140" height="142" xlinkHref="images/patterns/stars.png"></image>
+            <image x="0" y="0" width="140" height="142" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/stars.png"></image>
           </pattern>
           <pattern id="image-menorahs" x="0" y="0" patternUnits="userSpaceOnUse" width="110" height="110">
-            <image x="0" y="0" width="110" height="110" xlinkHref="images/patterns/menorahs.png"></image>
+            <image x="0" y="0" width="110" height="110" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/menorahs.png"></image>
           </pattern>
           <pattern id="image-dreidels" x="0" y="0" patternUnits="userSpaceOnUse" width="75" height="75">
-            <image x="0" y="0" width="75" height="75" xlinkHref="images/patterns/dreidels.png"></image>
+            <image x="0" y="0" width="75" height="75" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/dreidels.png"></image>
           </pattern>
           <pattern id="image-snow" x="0" y="0" patternUnits="userSpaceOnUse" width="224" height="172">
-            <image x="0" y="0" width="224" height="172" xlinkHref="images/patterns/snow.png"></image>
+            <image x="0" y="0" width="224" height="172" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/snow.png"></image>
           </pattern>
         </defs>
 
