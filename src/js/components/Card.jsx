@@ -48,7 +48,8 @@ class Card extends React.Component {
       colors.push(colors.splice(index, 1)[0]);
     }
 
-    let patternsBase = "https://ianli.github.io/bear-card/images/patterns/";
+    let baseUrl = 'http://bear-card.harmonli.com/';
+    let patternsBaseUrl = baseUrl + 'images/patterns/';
 
     return (
       <svg version="1.1"
@@ -61,35 +62,35 @@ class Card extends React.Component {
             xmlnsXlink="http://www.w3.org/1999/xlink">
         <defs>
           <pattern id="image-snowflakes" x="0" y="0" patternUnits="userSpaceOnUse" width="65" height="65">
-            <image x="0" y="0" width="65" height="65" xlinkHref={ patternsBase + 'snowflakes.png' }></image>
+            <image x="0" y="0" width="65" height="65" xlinkHref={ patternsBaseUrl + 'snowflakes.png' }></image>
           </pattern>
           <pattern id="image-trees" x="0" y="0" patternUnits="userSpaceOnUse" width="65" height="68">
-            <image x="0" y="0" width="65" height="68" xlinkHref={ patternsBase + 'trees.png' }></image>
+            <image x="0" y="0" width="65" height="68" xlinkHref={ patternsBaseUrl + 'trees.png' }></image>
           </pattern>
           <pattern id="image-reindeer" x="0" y="0" patternUnits="userSpaceOnUse" width="320" height="270">
-            <image x="0" y="0" width="320" height="270" xlinkHref={ patternsBase + 'reindeer.png' }></image>
+            <image x="0" y="0" width="320" height="270" xlinkHref={ patternsBaseUrl + 'reindeer.png' }></image>
           </pattern>
           <pattern id="image-hearts" x="0" y="0" patternUnits="userSpaceOnUse" width="121" height="68">
-            <image x="0" y="0" width="121" height="68" xlinkHref={ patternsBase + 'hearts.png' }></image>
+            <image x="0" y="0" width="121" height="68" xlinkHref={ patternsBaseUrl + 'hearts.png' }></image>
           </pattern>
           <pattern id="image-stars" x="0" y="0" patternUnits="userSpaceOnUse" width="140" height="142">
-            <image x="0" y="0" width="140" height="142" xlinkHref={ patternsBase + 'stars.png' }></image>
+            <image x="0" y="0" width="140" height="142" xlinkHref={ patternsBaseUrl + 'stars.png' }></image>
           </pattern>
           <pattern id="image-menorahs" x="0" y="0" patternUnits="userSpaceOnUse" width="110" height="110">
-            <image x="0" y="0" width="110" height="110" xlinkHref={ patternsBase + 'menorahs.png' }></image>
+            <image x="0" y="0" width="110" height="110" xlinkHref={ patternsBaseUrl + 'menorahs.png' }></image>
           </pattern>
           <pattern id="image-dreidels" x="0" y="0" patternUnits="userSpaceOnUse" width="75" height="75">
-            <image x="0" y="0" width="75" height="75" xlinkHref={ patternsBase + 'dreidels.png' }></image>
+            <image x="0" y="0" width="75" height="75" xlinkHref={ patternsBaseUrl + 'dreidels.png' }></image>
           </pattern>
           <pattern id="image-snow" x="0" y="0" patternUnits="userSpaceOnUse" width="224" height="172">
-            <image x="0" y="0" width="224" height="172" xlinkHref={ patternsBase + 'snow.png' }></image>
+            <image x="0" y="0" width="224" height="172" xlinkHref={ patternsBaseUrl + 'snow.png' }></image>
           </pattern>
           <style type="text/css">
           {`<![CDATA[
             @font-face {
               font-family: 'Faith and Glory One';
-              src: url('fonts/faithandglory/faith_and_glory_one_thefontsmaster.com-webfont.woff2') format('woff2'),
-                   url('fonts/faithandglory/faith_and_glory_one_thefontsmaster.com-webfont.woff') format('woff');
+              src: url('${baseUrl}fonts/faithandglory/faith_and_glory_one_thefontsmaster.com-webfont.woff2') format('woff2'),
+                   url('${baseUrl}fonts/faithandglory/faith_and_glory_one_thefontsmaster.com-webfont.woff') format('woff');
               font-weight: normal;
               font-style: normal;
             }
