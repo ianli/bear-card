@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Card from './components/Card';
+import Frame from './components/Frame';
 
 ReactDOM.render(
-  <Card />,
+  <Frame />,
   document.getElementById('root')
 );

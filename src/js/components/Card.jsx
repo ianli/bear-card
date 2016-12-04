@@ -30,7 +30,7 @@ const COLORS = [
   '#4db6ac'
 ];
 
-class BearingGifts extends React.Component {
+class Card extends React.Component {
   constructor() {
     super();
   }
@@ -39,13 +39,13 @@ class BearingGifts extends React.Component {
     let patterns = [].concat(PATTERNS);
     for (let i = 0, n = patterns.length; i < n; i++) {
       let index = Math.floor(Math.random() * (patterns.length - i));
-      patterns.push(patterns.splice(index, 1));
+      patterns.push(patterns.splice(index, 1)[0]);
     }
 
     let colors = [].concat(COLORS);
     for (let i = 0, n = colors.length; i < n; i++) {
       let index = Math.floor(Math.random() * (colors.length - i));
-      colors.push(colors.splice(index, 1));
+      colors.push(colors.splice(index, 1)[0]);
     }
 
     return (
@@ -53,11 +53,7 @@ class BearingGifts extends React.Component {
             x="0px"
             y="0px"
             viewBox="0 0 960 1280"
-            enableBackground="new 0 0 960 1280"
-            style={{
-              margin: '0 auto',
-              height: '100vh'
-            }}>
+            enableBackground="new 0 0 960 1280">
         <defs>
           <pattern id="image-snowflakes" x="0" y="0" patternUnits="userSpaceOnUse" width="65" height="65">
             <image x="0" y="0" width="65" height="65" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/snowflakes.png"></image>
@@ -141,4 +137,4 @@ class BearingGifts extends React.Component {
   }
 }
 
-export default BearingGifts;
+export default Card;
