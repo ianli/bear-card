@@ -83,6 +83,17 @@ class BearingGifts extends React.Component {
           <pattern id="image-snow" x="0" y="0" patternUnits="userSpaceOnUse" width="224" height="172">
             <image x="0" y="0" width="224" height="172" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/snow.png"></image>
           </pattern>
+          <style type="text/css">
+          {`<![CDATA[
+            @font-face {
+              font-family: 'Faith and Glory One';
+              src: url('fonts/faithandglory/faith_and_glory_one_thefontsmaster.com-webfont.woff2') format('woff2'),
+                   url('fonts/faithandglory/faith_and_glory_one_thefontsmaster.com-webfont.woff') format('woff');
+              font-weight: normal;
+              font-style: normal;
+            }
+          ]]>`}
+          </style>
         </defs>
 
         <Background
@@ -116,6 +127,15 @@ class BearingGifts extends React.Component {
         <Head
             color={colors[6]}
             pattern={patterns[6]} />
+
+        <text
+            transform="matrix(1 0 0 1 147.8472 1084.4744)"
+            fontFamily="'Faith and Glory One'"
+            fontSize="120"
+            letterSpacing="0"
+            fill="#FFFFFF">
+          HAPPY EVERYTHING!
+        </text>
       </svg>
     );
   }
