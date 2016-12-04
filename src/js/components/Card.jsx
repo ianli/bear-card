@@ -86,13 +86,7 @@ class Card extends React.Component {
             <image x="0" y="0" width="224" height="172" xlinkHref={ patternsBaseUrl + 'snow.png' }></image>
           </pattern>
           <style type="text/css">
-          {`@font-face {
-              font-family: 'Faith and Glory One';
-              src: url('${baseUrl}fonts/faithandglory/faith_and_glory_one_thefontsmaster.com-webfont.woff2') format('woff2'),
-                   url('${baseUrl}fonts/faithandglory/faith_and_glory_one_thefontsmaster.com-webfont.woff') format('woff');
-              font-weight: normal;
-              font-style: normal;
-            }`}
+            {`@import url('${baseUrl}fonts/faithandglory/stylesheet.css');`}
           </style>
         </defs>
 
