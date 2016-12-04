@@ -21,7 +21,7 @@ var es2015Preset = require('babel-preset-es2015');
 var ENTRY_POINT = './src/js/app.js';
 var SOURCE_PATH = 'src/js';
 var OUTPUT_FILE = 'app.js';
-var DESTINATION_PATH = 'build/js';
+var DESTINATION_PATH = 'dist/js';
 
 gulp.task('clean_app_js', function() {
   return gulp.src(DESTINATION_PATH, { read: false })
