@@ -50,10 +50,13 @@ class Card extends React.Component {
 
     return (
       <svg version="1.1"
+            ref="svg"
             x="0px"
             y="0px"
             viewBox="0 0 960 1280"
-            enableBackground="new 0 0 960 1280">
+            enableBackground="new 0 0 960 1280"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink">
         <defs>
           <pattern id="image-snowflakes" x="0" y="0" patternUnits="userSpaceOnUse" width="65" height="65">
             <image x="0" y="0" width="65" height="65" xlinkHref="https://ianli.github.io/bearing-gifts/images/patterns/snowflakes.png"></image>

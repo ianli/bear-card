@@ -6,11 +6,11 @@ const Background = ({color, pattern}) => {
       <rect
           fill={color}
           width="960"
-          height="1280"/>
+          height="1280" />
       <rect
           fill={`url(#${pattern})`}
           width="960"
-          height="1280"/>
+          height="1280" />
     </g>
   );
 };
