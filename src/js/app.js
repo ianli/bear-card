@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import BearingGifts from './components/BearingGifts';
+import Card from './components/Card';
 
 ReactDOM.render(
-  <BearingGifts />,
+  <Card />,
   document.getElementById('root')
 );
