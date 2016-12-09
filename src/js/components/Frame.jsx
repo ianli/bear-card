@@ -7,23 +7,27 @@ class Frame extends React.Component {
     super(props);
 
     this.state = {
-      downloadHref: null
+      randomNumber: Math.random()
     };
   }
 
-  componentDidMount() {
-    this.setState({
-      downloadHref: this.getDownloadHref()
-    });
+  shouldComponentUpdate(nextProps, nextState) {
+    return (this.state.randomNumber !== nextState.randomNumber);
   }
 
   render() {
     return (
       <div className="bc-Frame">
         <Card ref="card" />
-        <a href={this.state.downloadHref}
-            target="_blank">
+        <a id="bc-Frame__print"
+            className="fab-icon"
+            onClick={this._handleClickPrint.bind(this)}>
           <i className="material-icons">print</i>
+        </a>
+        <a id="bc-Frame__refresh"
+            className="fab-icon"
+            onClick={this._handleClickRefresh.bind(this)}>
+          <i className="material-icons">refresh</i>
         </a>
       </div>
     );
@@ -39,11 +43,15 @@ class Frame extends React.Component {
     return 'data:image/svg+xml;utf8,' + svgCode;
   }
 
-  _handleClickDownload(event) {
-    var card = this.refs.card;
-    var svg = card.refs.svg;
+  _handleClickPrint(event) {
+    let url = this.getDownloadHref();
+    window.open(url, '_blank');
+  }
 
-    svg.outerHTML;
+  _handleClickRefresh(event) {
+    this.setState({
+      randomNumber: Math.random()
+    });
   }
 }
 
