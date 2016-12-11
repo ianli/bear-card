@@ -8,6 +8,7 @@ import LeftLeg from './LeftLeg';
 import RightArm from './RightArm';
 import RightLeg from './RightLeg';
 import Torso from './Torso';
+import validateColorsSizeAndFormat from '../utils/validateColorsSizeAndFormat';
 
 const PATTERNS = [
   'image-snowflakes',
@@ -17,17 +18,6 @@ const PATTERNS = [
   'image-stars',
   'image-menorahs',
   'image-dreidels'
-];
-
-const COLORS = [
-  "#4CAF50",
-  "#AB47BC",
-  "#64B5F6",
-  "#FFC107",
-  "#E91E63",
-  "#FF5722",
-  "#2196F3",
-  '#4db6ac'
 ];
 
 class Card extends React.Component {
@@ -42,11 +32,7 @@ class Card extends React.Component {
       patterns.push(patterns.splice(index, 1)[0]);
     }
 
-    let colors = [].concat(COLORS);
-    for (let i = 0, n = colors.length; i < n; i++) {
-      let index = Math.floor(Math.random() * (colors.length - i));
-      colors.push(colors.splice(index, 1)[0]);
-    }
+    let colors = this.props.colors;
 
     let baseUrl = 'http://bear-card.harmonli.com/';
     let patternsBaseUrl = baseUrl + 'images/patterns/';
@@ -134,5 +120,9 @@ class Card extends React.Component {
     );
   }
 }
+
+Card.propTypes = {
+  colors: validateColorsSizeAndFormat
+};
 
 export default Card;

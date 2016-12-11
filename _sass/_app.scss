@@ -11,7 +11,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px;
   text-align: center;
 }
 
@@ -37,6 +36,7 @@ a.fab-icon {
   display: flex;
   flex-grow: 1;
   max-height: 100%;
+  padding: 20px;
 
   > svg {
     margin: auto;

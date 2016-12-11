@@ -16,9 +16,32 @@ class Frame extends React.Component {
   }
 
   render() {
+    let colors = [
+      "#4CAF50",
+      "#AB47BC",
+      "#64B5F6",
+      "#FFC107",
+      "#E91E63",
+      "#FF5722",
+      "#2196F3",
+      '#4db6ac'
+    ];
+
+    for (let i = 0, n = colors.length; i < n; i++) {
+      let index = Math.floor(Math.random() * (colors.length - i));
+      colors.push(colors.splice(index, 1)[0]);
+    }
+
+    // Last color is the color of the card background
+    let lastColor = colors[colors.length - 1];
+
     return (
-      <div className="bc-Frame">
-        <Card ref="card" />
+      <div className="bc-Frame"
+          style={{
+            backgroundColor: lastColor
+          }}>
+        <Card ref="card"
+            colors={colors} />
         <a id="bc-Frame__print"
             className="fab-icon"
             onClick={this._handleClickPrint.bind(this)}>
