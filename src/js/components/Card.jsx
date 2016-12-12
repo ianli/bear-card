@@ -34,7 +34,7 @@ class Card extends React.Component {
 
     let colors = this.props.colors;
 
-    let baseUrl = 'http://bear-card.harmonli.com/';
+    let baseUrl = 'https://ianli.github.io/bear-card/';
     let patternsBaseUrl = baseUrl + 'images/patterns/';
 
     return (
