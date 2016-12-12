@@ -42,24 +42,24 @@ a.fab-icon {
 
 #bc-Frame__print {
   position: fixed;
-  top: auto;
-  bottom: 88px;
-  right: 24px;
+  top: 16px;
+  right: 16px;
 
-  @media (min-width: 840px) {
+  // Tablet and above
+  @media (min-width: 480px) {
     top: 24px;
-    bottom: auto;
+    right: 24px;
   }
 }
 
 #bc-Frame__refresh {
   position: fixed;
-  top: auto;
-  bottom: 24px;
-  right: 24px;
+  top: 16px + 56px + 8px;
+  right: 16px;
 
-  @media (min-width: 840px) {
-    top: 88px;
-    bottom: auto;
+  // Tablet and above
+  @media (min-width: 480px) {
+    top: 24px + 56px + 8px;
+    right: 24px;
   }
 }
