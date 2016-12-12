@@ -1,18 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #eee;
-}
+body {}
 
-#root {
-  display: flex;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
+#root {}
 
 a.fab-icon {
   width: 56px;
@@ -25,6 +13,7 @@ a.fab-icon {
   box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),
       0 1px 1px 0 rgba(0,0,0,.24);
   cursor: pointer;
+  user-select: none;
 
   > .material-icons {
     line-height: 56px;
@@ -33,13 +22,19 @@ a.fab-icon {
 }
 
 .bc-Frame {
-  display: flex;
-  flex-grow: 1;
-  max-height: 100%;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
   > svg {
-    margin: auto;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    // Set width and height to force SVG to fit in window.
     width: 100%;
     height: 100%;
   }
@@ -47,12 +42,24 @@ a.fab-icon {
 
 #bc-Frame__print {
   position: fixed;
-  top: 24px;
+  top: auto;
+  bottom: 88px;
   right: 24px;
+
+  @media (min-width: 840px) {
+    top: 24px;
+    bottom: auto;
+  }
 }
 
 #bc-Frame__refresh {
   position: fixed;
-  top: 88px;
+  top: auto;
+  bottom: 24px;
   right: 24px;
+
+  @media (min-width: 840px) {
+    top: 88px;
+    bottom: auto;
+  }
 }
