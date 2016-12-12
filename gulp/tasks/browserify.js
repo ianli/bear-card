@@ -45,7 +45,8 @@ gulp.task('watch_app_js', ['clean_app_js'], function() {
 function setupBrowserify(entryPoint, sourcePath) {
   return browserify({
     entries: entryPoint,
-    debug: true,
+    // Set to false so source map is not generated.
+    debug: false,
     cache: {}, // required for watchify
     // Process files that end in JS and JSX.
     extensions: ['.js', '.jsx'],
