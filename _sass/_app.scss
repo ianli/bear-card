@@ -63,3 +63,24 @@ a.fab-icon {
     right: 24px;
   }
 }
+
+#bc-Footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+
+  > a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+  }
+}

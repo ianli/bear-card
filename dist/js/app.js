@@ -20818,6 +20818,17 @@ var Frame = function (_React$Component) {
             { className: 'material-icons' },
             'refresh'
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          { id: 'bc-Footer' },
+          '\xA9 2016',
+          ' ',
+          _react2.default.createElement(
+            'a',
+            { href: 'http://www.ianli.com' },
+            'Ian Li'
+          )
         )
       );
     }

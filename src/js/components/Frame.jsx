@@ -52,6 +52,12 @@ class Frame extends React.Component {
             onClick={this._handleClickRefresh.bind(this)}>
           <i className="material-icons">refresh</i>
         </a>
+
+        <div id="bc-Footer">
+          &copy; 2016
+          {' '}
+          <a href="http://www.ianli.com">Ian Li</a>
+        </div>
       </div>
     );
   }
