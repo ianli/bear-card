@@ -36,7 +36,7 @@ class Frame extends React.Component {
     let lastColor = colors[colors.length - 1];
 
     return (
-      <div className="bc-Frame"
+      <div id="bc-Frame"
           style={{
             backgroundColor: lastColor
           }}>
